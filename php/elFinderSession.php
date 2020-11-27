@@ -139,7 +139,7 @@ class elFinderSession implements elFinderSessionInterface
 
         if (version_compare(PHP_VERSION, '5.4.0', '>=')) {
             if (session_status() !== PHP_SESSION_ACTIVE) {
-                session_start();
+                //session_start();
             }
         } else {
             session_start();
